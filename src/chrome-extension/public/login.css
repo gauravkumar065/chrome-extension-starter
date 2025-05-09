@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Satoshi-Medium;
+    src: url('chrome-extension://__MSG_@@extension_id__/fonts/Satoshi-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #3080f8;
+    font-family: 'Satoshi-Medium', sans-serif;
+}
+
+.login-page {
+    height: 40rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    position: relative;
+    filter: drop-shadow(0 0 2px #000000);
+    border-radius: 5px;
+    width: 360px;
+    height: 420px;
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#showimg {
+    position: absolute;
+    height: 20px;
+    right: 60px;
+    top: 52%;
+    cursor: pointer;
+}
+
+.form {
+    text-align: center;
+}
+
+.form input {
+    outline: 0;
+    background: #f2f2f2;
+    border-radius: 4px;
+    width: 91%;
+    border: 0;
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.form input:focus {
+    box-shadow: 0 0 5px 0 rgba(106, 98, 210);
+}
+
+span {
+    color: red;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.form button {
+    outline: 0;
+    background: #3080f8;
+    width: 100%;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: black;
+    color: #fff;
+
+}
+
+.message {
+    margin: 15px 0;
+    text-align: center;
+
+}
+
+.form .message a {
+    font-size: 14px;
+    color: #3080f8;
+    text-decoration: none;
+}
+
+.loader {
+    width: 60px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side, white 90%, white) 0/calc(100%/3) 100% no-repeat;
+    animation: l2 1s steps(3) infinite;
+}
+
+@keyframes l2 {
+    to {
+        background-position: 150%
+    }
+}
